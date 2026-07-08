@@ -8,19 +8,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#14181C;
-    --ink-2:#1C2228;
-    --ink-3:#252C33;
-    --paper:#EAE4D6;
-    --paper-2:#DFD8C7;
-    --brass:#B8874A;
-    --teal:#5C8C86;
-    --rust:#A6483B;
-    --text-hi:#F2EFE7;
-    --text-lo:#9BA6AC;
-    --text-paper:#23262B;
-    --text-paper-lo:#5B5A53;
-    --rule:#33393F;
+        /* Raw 10-shade palette */
+    --shade-1:#EFF1F3;
+    --shade-2:#D2D3D1;
+    --shade-3:#B3BEC0;
+    --shade-4:#97A9AC;
+    --shade-5:#7F999D;
+    --shade-6:#6C8AA3;
+    --shade-7:#5A7292;
+    --shade-8:#495C7A;
+    --shade-9:#37415C;
+    --shade-10:#212E40;
+ 
+    /* Semantic roles mapped to the palette */
+    --ink:var(--shade-10);
+    --ink-2:var(--shade-9);
+    --ink-3:var(--shade-8);
+    --paper:var(--shade-1);
+    --paper-2:var(--shade-2);
+    --accent:var(--shade-6);
+    --accent-2:var(--shade-4);
+    --stamp:var(--shade-7);
+    --text-hi:var(--shade-1);
+    --text-lo:var(--shade-4);
+    --text-paper:var(--shade-10);
+    --text-paper-lo:var(--shade-7);
+    --rule:var(--shade-9);
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
