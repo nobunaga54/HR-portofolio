@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-        /* Raw 10-shade palette */
+    /* Raw 10-shade palette */
     --shade-1:#EFF1F3;
     --shade-2:#D2D3D1;
     --shade-3:#B3BEC0;
@@ -19,7 +19,7 @@
     --shade-8:#495C7A;
     --shade-9:#37415C;
     --shade-10:#212E40;
- 
+
     /* Semantic roles mapped to the palette */
     --ink:var(--shade-10);
     --ink-2:var(--shade-9);
@@ -53,14 +53,14 @@
     position:sticky; top:0; z-index:50;
     display:flex; justify-content:space-between; align-items:center;
     padding:20px 6vw;
-    background:rgba(20,24,28,0.88);
+    background:rgba(33,46,64,0.88);
     backdrop-filter:blur(8px);
     border-bottom:1px solid var(--rule);
   }
   .nav-name{font-family:'Fraunces',serif; font-size:1.05rem; font-weight:600; letter-spacing:.02em;}
   .nav-links{display:flex; gap:28px; font-size:.85rem;}
   .nav-links a{text-decoration:none; color:var(--text-lo); transition:color .2s;}
-  .nav-links a:hover{color:var(--brass);}
+  .nav-links a:hover{color:var(--accent-2);}
 
   /* ---------- HERO ---------- */
   .hero{
@@ -74,7 +74,7 @@
   .hero-photo{
     width:160px; height:160px; border-radius:50%;
     overflow:hidden; flex-shrink:0;
-    border:3px solid var(--brass);
+    border:3px solid var(--accent);
     box-shadow:0 20px 40px -12px rgba(0,0,0,.5);
   }
   .hero-photo img{width:100%; height:100%; object-fit:cover; object-position:center 20%; display:block; cursor:zoom-in;}
@@ -85,14 +85,14 @@
   .eyebrow{
     font-family:'IBM Plex Mono',monospace;
     font-size:.72rem; letter-spacing:.12em; text-transform:uppercase;
-    color:var(--teal); margin-bottom:18px; display:block;
+    color:var(--accent-2); margin-bottom:18px; display:block;
   }
   .hero h1{
     font-size:clamp(2.4rem, 5.2vw, 4.4rem);
     font-weight:600; line-height:1.05; letter-spacing:-.01em;
     max-width:14ch;
   }
-  .hero h1 em{font-style:italic; font-weight:300; color:var(--paper-2);}
+  .hero h1 em{font-style:italic; font-weight:300; color:var(--shade-3);}
   .hero-sub{
     margin-top:22px; max-width:52ch; color:var(--text-lo);
     font-size:1.05rem; line-height:1.6;
@@ -112,15 +112,15 @@
     position:absolute; top:-18px; left:50%;
     transform:translateX(-50%) rotate(-9deg);
     width:112px; height:112px;
-    border:2.5px solid var(--rust);
+    border:2.5px solid var(--stamp);
     border-radius:50%;
     display:flex; align-items:center; justify-content:center;
     text-align:center;
-    color:var(--rust);
+    color:var(--stamp);
     font-family:'IBM Plex Mono',monospace;
     font-size:.62rem; letter-spacing:.06em; text-transform:uppercase;
     line-height:1.35; font-weight:500;
-    background:rgba(166,72,59,0.04);
+    background:rgba(90,114,146,0.06);
   }
   .statement-head{
     display:flex; justify-content:space-between; align-items:baseline;
@@ -133,7 +133,7 @@
   }
   .stat{padding:14px 18px 4px 0; border-right:1px solid var(--paper-2);}
   .stat:last-child{border-right:none;}
-  .stat .num{font-family:'Fraunces',serif; font-size:1.9rem; font-weight:600; color:var(--rust);}
+  .stat .num{font-family:'Fraunces',serif; font-size:1.9rem; font-weight:600; color:var(--stamp);}
   .stat .lbl{font-family:'IBM Plex Mono',monospace; font-size:.66rem; letter-spacing:.06em; text-transform:uppercase; color:var(--text-paper-lo); margin-top:2px;}
 
   /* ---------- SECTION SHELL ---------- */
@@ -144,7 +144,7 @@
   .section-tag .ln{flex:1; height:1px; background:var(--rule);}
   .section-tag span{
     font-family:'IBM Plex Mono',monospace; font-size:.75rem; letter-spacing:.1em;
-    text-transform:uppercase; color:var(--brass); white-space:nowrap;
+    text-transform:uppercase; color:var(--accent-2); white-space:nowrap;
   }
   .section-title{font-size:clamp(1.6rem,3vw,2.2rem); font-weight:600; margin-bottom:36px; max-width:22ch;}
 
@@ -155,7 +155,7 @@
     gap:24px; padding:26px 0; border-bottom:1px solid var(--rule);
     align-items:baseline;
   }
-  .ledger-row .date{font-family:'IBM Plex Mono',monospace; font-size:.8rem; color:var(--brass);}
+  .ledger-row .date{font-family:'IBM Plex Mono',monospace; font-size:.8rem; color:var(--accent-2);}
   .ledger-row h3{font-size:1.15rem; font-weight:600; margin-bottom:6px;}
   .ledger-row p{color:var(--text-lo); font-size:.94rem; line-height:1.55; margin:0;}
   .ledger-row .tags{font-family:'IBM Plex Mono',monospace; font-size:.72rem; color:var(--text-lo); text-align:right;}
@@ -174,10 +174,10 @@
     background:var(--ink-2); border:1px solid var(--rule); border-radius:4px;
     overflow:hidden; transition:transform .25s, border-color .25s;
   }
-  .g-card:hover{transform:translateY(-4px); border-color:var(--teal);}
+  .g-card:hover{transform:translateY(-4px); border-color:var(--accent);}
   .g-thumb{
     height:180px; display:flex; align-items:center; justify-content:center;
-    font-family:'Fraunces',serif; font-size:.95rem; color:rgba(242,239,231,0.55);
+    font-family:'Fraunces',serif; font-size:.95rem; color:rgba(239,241,243,0.55);
     background:linear-gradient(135deg,var(--ink-3),var(--ink-2));
     border-bottom:1px solid var(--rule);
     position:relative; overflow:hidden;
@@ -188,28 +188,29 @@
   .g-body p{margin:0; font-size:.85rem; color:var(--text-lo); line-height:1.5;}
   .g-body .tag{
     display:inline-block; margin-top:12px; font-family:'IBM Plex Mono',monospace;
-    font-size:.68rem; color:var(--teal); letter-spacing:.05em; text-transform:uppercase;
+    font-size:.68rem; color:var(--accent-2); letter-spacing:.05em; text-transform:uppercase;
   }
 
-  /* ---------- SLIDESHOW (Blog Content card) ---------- */
+  /* ---------- SLIDESHOW ---------- */
   .slideshow img{
     position:absolute; top:0; left:0;
     width:100%; height:100%; object-fit:cover;
     opacity:0; transition:opacity .6s ease;
+    pointer-events:none;
   }
-  .slideshow img.active{opacity:1;}
+  .slideshow img.active{opacity:1; pointer-events:auto;}
   .slide-dots{
     position:absolute; bottom:8px; left:50%; transform:translateX(-50%);
     display:flex; gap:6px; z-index:2;
   }
   .slide-dots button{
     width:7px; height:7px; border-radius:50%; border:none;
-    background:rgba(242,239,231,0.4); cursor:pointer; padding:0;
+    background:rgba(239,241,243,0.4); cursor:pointer; padding:0;
   }
-  .slide-dots button.active{background:var(--brass);}
+  .slide-dots button.active{background:var(--accent);}
   .slide-arrow{
     position:absolute; top:50%; transform:translateY(-50%);
-    background:rgba(20,24,28,0.55); color:var(--text-hi); border:none;
+    background:rgba(33,46,64,0.55); color:var(--text-hi); border:none;
     width:26px; height:26px; border-radius:50%; cursor:pointer; z-index:2;
     display:flex; align-items:center; justify-content:center; font-size:.8rem;
   }
@@ -218,7 +219,7 @@
   /* ---------- LIGHTBOX ---------- */
   .lightbox{
     position:fixed; inset:0; z-index:100;
-    background:rgba(10,12,14,0.92);
+    background:rgba(15,20,28,0.92);
     display:none; align-items:center; justify-content:center;
     padding:40px; cursor:zoom-out;
   }
@@ -235,20 +236,19 @@
     cursor:pointer; line-height:1;
   }
   .lightbox-arrow{
-  position:absolute; top:50%; transform:translateY(-50%);
-  background:rgba(242,239,231,0.12); color:var(--text-hi); border:none;
-  width:44px; height:44px; border-radius:50%; cursor:pointer; z-index:2;
-  display:flex; align-items:center; justify-content:center; font-size:1.4rem;
-}
-.lightbox-arrow.prev{left:24px;}
-.lightbox-arrow.next{right:24px;}
-]  
+    position:absolute; top:50%; transform:translateY(-50%);
+    background:rgba(239,241,243,0.12); color:var(--text-hi); border:none;
+    width:44px; height:44px; border-radius:50%; cursor:pointer; z-index:2;
+    display:flex; align-items:center; justify-content:center; font-size:1.4rem;
+  }
+  .lightbox-arrow.prev{left:24px;}
+  .lightbox-arrow.next{right:24px;}
 
   /* ---------- ALSO BUILDING ---------- */
   .side-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
   .side-card{
     background:var(--ink-2); border:1px solid var(--rule); border-radius:4px;
-    padding:24px; border-left:3px solid var(--brass);
+    padding:24px; border-left:3px solid var(--accent);
   }
   .side-card h4{font-size:1.02rem; font-weight:600; margin-bottom:8px;}
   .side-card p{color:var(--text-lo); font-size:.88rem; line-height:1.55; margin:0;}
@@ -261,7 +261,7 @@
   .contact h2{font-size:clamp(1.8rem,4vw,2.8rem); max-width:14ch;}
   .contact-links{display:flex; flex-direction:column; gap:10px; font-family:'IBM Plex Mono',monospace; font-size:.9rem;}
   .contact-links a{text-decoration:none; border-bottom:1px solid transparent; transition:border-color .2s, color .2s;}
-  .contact-links a:hover{color:var(--brass); border-color:var(--brass);}
+  .contact-links a:hover{color:var(--accent-2); border-color:var(--accent-2);}
   footer{
     text-align:center; padding:26px 6vw; color:var(--text-lo);
     font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.04em;
@@ -291,7 +291,7 @@
     .reveal{transition:none; opacity:1; transform:none;}
     .g-card{transition:none;}
   }
-  :focus-visible{outline:2px solid var(--brass); outline-offset:3px;}
+  :focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
 </style>
 </head>
 <body>
@@ -386,7 +386,7 @@
       </div>
     </div>
 
-       <div class="ledger-row reveal">
+    <div class="ledger-row reveal">
       <div class="date mono">2018</div>
       <div>
         <h3>Junior Graphic Designer (Intern)</h3>
@@ -408,8 +408,9 @@
         <span>SOCIAL MEDIA</span>
         <span>EVENT SUPPORT</span>
       </div>
-      
-     <div class="ledger-row reveal">
+    </div>
+
+    <div class="ledger-row reveal">
       <div class="date mono">Ed.</div>
       <div>
         <h3>Fachhochschule Südwestfalen &amp; Swiss German University</h3>
@@ -438,13 +439,13 @@
 
   <div class="gallery">
     <div class="g-card reveal">
-      <div class="g-thumb slideshow" data-slideshow data-manual="true">
+      <div class="g-thumb slideshow" data-slideshow>
         <img src="Blog-1.png" class="active" alt="Blog content 1">
-        <img src="Blog-2.png" class="active" alt="Blog content 2">
-        <img src="Blog-3.png" class="active" alt="Blog content 3">
-        <img src="Blog-4.png" class="active" alt="Blog content 4">
-        <img src="Blog-5.png" class="active" alt="Blog content 5">
-        <img src="Blog-6.png" class="active" alt="Blog content 6">
+        <img src="Blog-2.jpg" alt="Blog Content 2">
+        <img src="Blog-3.jpg" alt="Blog Content 3">
+        <img src="Blog-4.jpg" alt="Blog Content 4">
+        <img src="Blog-5.jpg" alt="Blog Content 5">
+        <img src="Blog-6.jpg" alt="Blog Content 6">
         <button class="slide-arrow prev" aria-label="Previous">‹</button>
         <button class="slide-arrow next" aria-label="Next">›</button>
         <div class="slide-dots"></div>
@@ -455,6 +456,7 @@
         <span class="tag">Branding</span>
       </div>
     </div>
+
     <div class="g-card reveal">
       <div class="g-thumb">
         <img src="BC-1.png" alt="Business card design" style="width:100%; height:100%; object-fit:cover;">
@@ -465,21 +467,7 @@
         <span class="tag">Branding</span>
       </div>
     </div>
-    <div class="g-card reveal">
-      <div class="g-thumb slideshow" data-slideshow data-manual="true">
-        <img src="Drawing-1.jpg" class="active" alt="Tiger Illustration Series 1">
-        <img src="Drawing-2.jpg" class="active" alt="Tiger Illustration Series 2">
-        <img src="Drawing-3.png" class="active" alt="Tiger Illustration Series 3">
-        <button class="slide-arrow prev" aria-label="Previous">‹</button>
-        <button class="slide-arrow next" aria-label="Next">›</button>
-        <div class="slide-dots"></div>
-      </div>
-      <div class="g-body">
-        <h4>Tiger Illustration Series</h4>
-        <p>Original digital paintings designed for print-on-demand use — mugs, NFC cards, and similar merchandise. Bold color blocking and loose brushwork built to hold up at small scale.</p>
-        <span class="tag">Illustration</span>
-      </div>
-    </div> 
+
     <div class="g-card reveal">
       <div class="g-thumb">
         <img src="General Catalogue Draft_1_page-0001.jpg" alt="Brochure layout design" style="width:100%; height:100%; object-fit:cover;">
@@ -490,22 +478,7 @@
         <span class="tag">Print</span>
       </div>
     </div>
-     <div class="g-card reveal">
-      <div class="g-thumb slideshow" data-slideshow data-manual="true">
-        <img src="EF-1.JPG" class="active" alt="EF Ambassador Program 1">
-        <img src="EF-2.JPG" class="active" alt="EF Ambassador Program 2">
-        <img src="EF-3.JPG" class="active" alt="EF Ambassador Program 3">
-        <img src="EF-4.JPG" class="active" alt="EF Ambassador Program 4">
-        <button class="slide-arrow prev" aria-label="Previous">‹</button>
-        <button class="slide-arrow next" aria-label="Next">›</button>
-        <div class="slide-dots"></div>
-      </div>
-      <div class="g-body">
-        <h4>EF Ambassador Program</h4>
-        <p>Education First, Jakarta. Represented EF as a brand ambassador across a season of community events — team outings, a paintball day, and the year-end Christmas gathering — building camaraderie and brand presence among fellow ambassadors.</p>
-        <span class="tag">Event Production</span>
-      </div>
-    </div> 
+
     <div class="g-card reveal">
       <div class="g-thumb">
         <video controls style="width:100%; height:100%; object-fit:cover;">
@@ -518,33 +491,44 @@
         <span class="tag">Motion / Branding</span>
       </div>
     </div>
-  </div>
-</section>
 
-<section id="building">
-  <div class="section-tag"><span>Also Building</span><div class="ln"></div></div>
-  <h2 class="section-title">Ongoing projects outside the day job</h2>
-
-  <div class="side-grid">
-    <div class="side-card reveal">
-      <h4>Realitome</h4>
-      <p>A faceless YouTube channel using Hollywood films as a lens on philosophy, psychology, society, science, and spirituality.</p>
-    </div>
-    <div class="side-card reveal">
-      <h4>Game server engineering</h4>
-      <p>Set up and modded private servers (Ragnarok Online, RF Online) — database config, GM tooling, environment troubleshooting.</p>
-    </div>
-    <div class="side-card reveal">
-      <h4>Freelance Copywriting</h4>
-      <p>Writing product descriptions, marketing copy, and social captions for small businesses and personal brands — turning a feature or a story into something people actually want to read.</p>
-    </div>
-  </div>
     <div class="g-card reveal">
-      <div class="g-thumb slideshow" data-manual="true">
+      <div class="g-thumb slideshow" data-slideshow>
+        <img src="Drawing-1.jpg" class="active" alt="Tiger illustration 1">
+        <img src="Drawing-2.jpg" alt="Tiger illustration 2">
+        <button class="slide-arrow prev" aria-label="Previous">‹</button>
+        <button class="slide-arrow next" aria-label="Next">›</button>
+        <div class="slide-dots"></div>
+      </div>
+      <div class="g-body">
+        <h4>Tiger Illustration Series</h4>
+        <p>Original digital paintings designed for print-on-demand use — mugs, NFC cards, and similar merchandise. Bold color blocking and loose brushwork built to hold up at small scale.</p>
+        <span class="tag">Illustration</span>
+      </div>
+    </div>
+
+    <div class="g-card reveal">
+      <div class="g-thumb slideshow" data-slideshow>
+        <img src="EF-1.JPG" class="active" alt="EF Ambassador event 1">
+        <img src="EF-2.JPG" alt="EF Ambassador event 2">
+        <img src="EF-3.JPG" alt="EF Ambassador event 3">
+        <img src="EF-4.JPG" alt="EF Ambassador event 4">
+        <button class="slide-arrow prev" aria-label="Previous">‹</button>
+        <button class="slide-arrow next" aria-label="Next">›</button>
+        <div class="slide-dots"></div>
+      </div>
+      <div class="g-body">
+        <h4>EF Ambassador Program</h4>
+        <p>Education First, Jakarta. Represented EF as a brand ambassador across a season of community events — team outings, a paintball day, and the year-end Christmas gathering — building camaraderie and brand presence among fellow ambassadors.</p>
+        <span class="tag">Event Production</span>
+      </div>
+    </div>
+    <div class="g-card reveal">
+      <div class="g-thumb slideshow" data-slideshow>
         <img src="Prom-1.jpg" class="active" alt="Prom night photo 1">
-        <img src="Prom-2.jpg" class="active" alt="Prom night photo 2">
-        <img src="Prom-3.jpg" class="active" alt="Prom night photo 3">
-        <img src="Prom-4.jpg" class="active" alt="Prom night photo 4">
+        <img src="Prom-2.jpg" alt="Prom night photo 2">
+        <img src="Prom-3.jpg" alt="Prom night photo 3">
+        <img src="Prom-4.jpg" alt="Prom night photo 4">
         <button class="slide-arrow prev" aria-label="Previous">‹</button>
         <button class="slide-arrow next" aria-label="Next">›</button>
         <div class="slide-dots"></div>
@@ -569,7 +553,26 @@
       </div>
     </div>
   </div>
-  
+</section>
+
+<section id="building">
+  <div class="section-tag"><span>Also Building</span><div class="ln"></div></div>
+  <h2 class="section-title">Ongoing projects outside the day job</h2>
+
+  <div class="side-grid">
+    <div class="side-card reveal">
+      <h4>Realitome</h4>
+      <p>A faceless YouTube channel using Hollywood films as a lens on philosophy, psychology, society, science, and spirituality.</p>
+    </div>
+    <div class="side-card reveal">
+      <h4>Game server engineering</h4>
+      <p>Set up and modded private servers (Ragnarok Online, RF Online) — database config, GM tooling, environment troubleshooting.</p>
+    </div>
+    <div class="side-card reveal">
+      <h4>Freelance Copywriting</h4>
+      <p>Writing product descriptions, marketing copy, and social captions for small businesses and personal brands — turning a feature or a story into something people actually want to read.</p>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
@@ -627,60 +630,60 @@
     if(prevBtn) prevBtn.addEventListener('click', () => goTo(current - 1));
     if(nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
 
-    if(imgs.length > 1 && box.dataset.manual !== 'true'){
+    if(imgs.length > 1){
       setInterval(() => goTo(current + 1), 4000);
     }
   });
 
-  // Lightbox logic
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const lbPrev = document.querySelector('.lightbox-arrow.prev');
-    const lbNext = document.querySelector('.lightbox-arrow.next');
-    let lbImages = [];
-    let lbIndex = 0;
-    
-    document.querySelectorAll('.g-thumb img, .hero-photo img').forEach(img => {
-      img.addEventListener('click', () => {
-        const group = img.closest('.g-thumb') || img.closest('.hero-photo');
-        lbImages = Array.from(group.querySelectorAll('img'));
-        lbIndex = lbImages.indexOf(img);
-        updateLightbox();
-        lightbox.classList.add('open');
-      });
-    });
-    
-    function updateLightbox(){
-      lightboxImg.src = lbImages[lbIndex].src;
-      lightboxImg.alt = lbImages[lbIndex].alt;
-      const showArrows = lbImages.length > 1;
-      lbPrev.style.display = showArrows ? 'flex' : 'none';
-      lbNext.style.display = showArrows ? 'flex' : 'none';
-    }
-    
-    lbPrev.addEventListener('click', e => {
-      e.stopPropagation();
-      lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length;
+  // Lightbox logic (with prev/next navigation)
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lbPrev = document.querySelector('.lightbox-arrow.prev');
+  const lbNext = document.querySelector('.lightbox-arrow.next');
+  let lbImages = [];
+  let lbIndex = 0;
+
+  document.querySelectorAll('.g-thumb img, .hero-photo img').forEach(img => {
+    img.addEventListener('click', () => {
+      const group = img.closest('.g-thumb') || img.closest('.hero-photo');
+      lbImages = Array.from(group.querySelectorAll('img'));
+      lbIndex = lbImages.indexOf(img);
       updateLightbox();
+      lightbox.classList.add('open');
     });
-    lbNext.addEventListener('click', e => {
-      e.stopPropagation();
-      lbIndex = (lbIndex + 1) % lbImages.length;
-      updateLightbox();
-    });
-    
-    function closeLightbox(){ lightbox.classList.remove('open'); }
-    
-    lightbox.addEventListener('click', closeLightbox);
-    document.querySelector('.lightbox-close').addEventListener('click', e => {
-      e.stopPropagation();
-      closeLightbox();
-    });
-    document.addEventListener('keydown', e => {
-      if(e.key === 'Escape') closeLightbox();
-      if(e.key === 'ArrowLeft' && lightbox.classList.contains('open')) lbPrev.click();
-      if(e.key === 'ArrowRight' && lightbox.classList.contains('open')) lbNext.click();
-    });
+  });
+
+  function updateLightbox(){
+    lightboxImg.src = lbImages[lbIndex].src;
+    lightboxImg.alt = lbImages[lbIndex].alt;
+    const showArrows = lbImages.length > 1;
+    lbPrev.style.display = showArrows ? 'flex' : 'none';
+    lbNext.style.display = showArrows ? 'flex' : 'none';
+  }
+
+  lbPrev.addEventListener('click', e => {
+    e.stopPropagation();
+    lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length;
+    updateLightbox();
+  });
+  lbNext.addEventListener('click', e => {
+    e.stopPropagation();
+    lbIndex = (lbIndex + 1) % lbImages.length;
+    updateLightbox();
+  });
+
+  function closeLightbox(){ lightbox.classList.remove('open'); }
+
+  lightbox.addEventListener('click', closeLightbox);
+  document.querySelector('.lightbox-close').addEventListener('click', e => {
+    e.stopPropagation();
+    closeLightbox();
+  });
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape') closeLightbox();
+    if(e.key === 'ArrowLeft' && lightbox.classList.contains('open')) lbPrev.click();
+    if(e.key === 'ArrowRight' && lightbox.classList.contains('open')) lbNext.click();
+  });
 </script>
 
 </body>
